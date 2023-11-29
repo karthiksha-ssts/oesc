@@ -47,11 +47,10 @@ if(!isset($_SESSION['is_login'])){
 
 <body>
   <div class="mb-3 text-center mt-5" style="font-size: 30px;">
-    <i class="fas fa-stethoscope"></i>
-    <span>Online Maintenance Managment System</span>
+    <span>Online Electronics Service Center</span>
   </div>
-  <p class="text-center" style="font-size: 20px;"> <i class="fas fa-user-secret text-danger"></i> <span>Requester
-      Area(Demo)</span>
+  <p class="text-center" style="font-size: 20px;"><span>User
+      Area</span>
   </p>
   <div class="container-fluid mb-5">
     <div class="row justify-content-center custom-margin">
@@ -67,7 +66,7 @@ if(!isset($_SESSION['is_login'])){
             <i class="fas fa-key"></i><label for="pass" class="pl-2 font-weight-bold">Password</label><input type="password"
               class="form-control" placeholder="Password" name="rPassword">
           </div>
-          <button type="submit" class="btn btn-outline-danger mt-3 btn-block shadow-sm font-weight-bold">Login</button>
+          <button type="submit" class="btn mt-3 btn-block shadow-sm font-weight-bold" style="background-color: #6b3b85; color: #ffffff;">Login</button>
           <?php if(isset($msg)) {echo $msg; } ?>
         </form>
         <div class="text-center"><a class="btn btn-info mt-3 shadow-sm font-weight-bold" href="../index.php">Back

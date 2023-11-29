@@ -1,5 +1,6 @@
 <?php
 define('TITLE', 'Success');
+define('PAGE', 'SubmitRequest');
 include('includes/header.php'); 
 include('../dbConnection.php');
 session_start();

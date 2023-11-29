@@ -13,7 +13,7 @@ if(isset($_REQUEST['submit'])) {
  $email = $_REQUEST['email'];
  $message = $_REQUEST['message'];
 
- $mailTo = "contact@geekyshows.com";
+ $mailTo = "karthiksha2@gmail.com";
  $headers = "From: ". $email;
  $txt = "You have received an email from ". $name. ".\n\n".$message;
  mail($mailTo, $subject, $txt, $headers);
@@ -26,7 +26,7 @@ if(isset($_REQUEST['submit'])) {
 <!--Start Contact Us Row-->
 <div class="col-md-8">
  <!--Start Contact Us 1st Column-->
- <form action="" method="post">
+ <form action="" method="post" class="mx-auto">
   <input type="text" class="form-control" name="name" placeholder="Name"><br>
   <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
   <input type="email" class="form-control" name="email" placeholder="E-mail"><br>

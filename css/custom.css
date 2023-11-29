@@ -5,6 +5,10 @@
   font-weight: bold;
 }
 
+.text-dark-purple {
+  color: #6b3b85; /* Replace with your desired dark purple text color */
+}
+
 /* Change Navigation Color */
 .navbar #myMenu .custom-nav .nav-item a {
   color: #fff;

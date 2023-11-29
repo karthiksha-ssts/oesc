@@ -23,7 +23,7 @@ if($_SESSION['is_login']){
     $sql = "SELECT * FROM assignwork_tb WHERE request_id = {$_REQUEST['checkid']}";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
-    if(($row['request_id']) == $_REQUEST['checkid']){ ?>
+    if($row !== null && $row['request_id'] == $_REQUEST['checkid']){ ?>
   <h3 class="text-center mt-5">Assigned Work Details</h3>
   <table class="table table-bordered">
     <tbody>
